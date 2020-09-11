@@ -1,0 +1,12 @@
+h1, h2, p {
+    text-align: center;
+}
+
+#game_canvas {
+    background-color: blueviolet;
+    border-color: black;
+}
+
+#canvas_container{
+    text-align:center;
+}
