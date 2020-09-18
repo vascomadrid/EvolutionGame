@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     !squares[pacmanCurrentIndex + 1].classList.contains('ghost-lair')
                 )
                     pacmanCurrentIndex += 1
-                if (squares[pacmanCurrentIndex + 1] === squares[279]) {
+                if (squares[pacmanCurrentIndex + 1] === squares[280]) {
                     pacmanCurrentIndex = 260
                 }
                 break
