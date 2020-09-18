@@ -131,3 +131,10 @@ p {
     display: table;
     clear: both;
 }
+a {
+    color: darkslategray;
+}
+.code-link {
+    padding-top: 20px;
+    padding-left: 20px;
+}
