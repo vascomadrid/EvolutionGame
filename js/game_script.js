@@ -180,9 +180,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //all my ghosts
     ghosts = [
         new Ghost('blinky', 58, 300),
-        new Ghost('pinky', 78, 400),
-        new Ghost('inky', 98, 300),
-        new Ghost('clyde', 118, 500)
+        new Ghost('pinky', 146, 400),
+        new Ghost('inky', 269, 300),
+        new Ghost('clyde', 327, 500)
     ]
 
     //draw my ghosts onto the grid
@@ -219,8 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //if the ghost is currently scared and pacman is on it
             if (ghost.isScared && squares[ghost.currentIndex].classList.contains('pac-man')) {
                 squares[ghost.currentIndex].classList.remove(ghost.className, 'ghost', 'scared-ghost')
-                ghost.currentIndex = ghost.startIndex
-                document.getElementsByClassName('scared-ghost').style.removeProperty("background-color")
+                ghost.currentIndex = 58
                 squares[ghost.currentIndex].classList.add(ghost.className, 'ghost')
             }
             checkForGameOver()
