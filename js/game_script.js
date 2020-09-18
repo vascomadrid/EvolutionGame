@@ -164,6 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (squares[pacmanCurrentIndex].classList.contains('power-pellet')) {
             ghosts.forEach(ghost => ghost.isScared = true)
             setTimeout(unScareGhosts, 10000)
+            score++
+            scoreDisplay.innerHTML = score
             squares[pacmanCurrentIndex].classList.remove('power-pellet')
         }
     }
@@ -233,7 +235,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (ghost.isScared) {
                     squares[ghost.currentIndex].classList.add('scared-ghost')
                 }
-
+                if (ghost.isScared && squares[ghost.currentIndex].classList.contains('pac-man')) {
+                    squares[ghost.currentIndex].classList.remove(ghost.className, 'ghost', 'scared-ghost')
+                    ghost.currentIndex = 58
+                    squares[ghost.currentIndex].classList.add(ghost.className, 'ghost')
+                }
                 checkForGameOver()
             }
             
@@ -247,13 +253,13 @@ document.addEventListener('DOMContentLoaded', () => {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener('keyup', movePacman)
             setTimeout(500)
-            scoreDisplay.innerHTML = "GAME OVER"
+            scoreDisplay.innerHTML = "YOU LOST ):"
         }
     }
 
     //check for a win - more is when this score is reached
     function checkForWin() {
-        if (score === 100) {
+        if (score === 104) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener('keyup', movePacman)
             setTimeout(500)
