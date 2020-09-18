@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
 <head>
@@ -9,19 +9,28 @@
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script src="js/game_script.js"></script>
 
 </head>
 
-<body onload="start_game()">
-    <h1 id="film_series_title">UofSC Monstrous Mothers Film Series presents:</h1>
-    <h2 id="game_title">Evolution Game</h2>
-    <div id="description">
-        <p>Heres a little something something about the series and the game </p>
+<body>
+    <div class="row">
+        <div class="column">
+            <div class="grid"></div>
+        </div>
+        <div class="column text-column">
+            <h3 id="film_series_title">UofSC Monstrous Mothers Film Series presents:</h3>
+            <div class="title-cont"><div class="title"></div></div>
+            <div id="description">
+                <p>Heres a little something something about the series and the game </p>
+                <h2>How to Play</h2>
+                <p>somethinig about how to play</p>
+                <h1>Score:<span id="score"></span></h1>
+            </div>
+        </div>
     </div>
-    <div id="canvas_container">
-        <canvas id="game_canvas"></canvas>
-    </div>
-    <script src="js/game_script.js"></script>
+    
+    
 </body>
 
 </html>
