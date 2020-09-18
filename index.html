@@ -22,15 +22,20 @@
             <h3 id="film_series_title">UofSC Haunted Moms Film Series presents:</h3>
             <div class="title-cont"><div class="title"></div></div>
             <div id="description">
-                <p>Game based off of Evolution(2015) directed by Lucile Hadžihalilović</p>
+                <p>Pac-man style game based off of Evolution(2015) directed by Lucile Hadžihalilović</p>
                 <h2>How to Play</h2>
                 <p id="instructions">
+                    You are a boy in the upper left corner<br />
                     1. Move using arrow keys <br />
                     2. Collect all items to win<br />
-                    3. Avoid getting caught <br />
-                    4. Eat green pasta to passify nurse, touch nurse to send her to her lair <br />
-                    5. Refresh page to start over
+                    3. Avoid getting caught by nurse<br />
+                    4. Eat green pasta to passify nurse, touch passified nurse (glowing yellow) to send her to her lair <br />
                 </p>
+                <div class="button-cont">
+                    <button type="button" onclick="startGame()" class="start-button">PLAY</button>
+                    <button type="button" onClick="window.location.reload();" class="refresh-button">CLEAR</button>
+                </div>
+
                 <h1>Score:<span id="score"></span></h1>
             </div>
         </div>

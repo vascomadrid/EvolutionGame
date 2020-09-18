@@ -8,6 +8,28 @@ h1, h2, h3, p {
 h1 {
     color: white
 }
+.button-cont {
+    text-align: center;
+}
+.start-button {
+    width: 80px;
+    height: 40px;
+    background-color: lightsalmon;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    border-color: aliceblue;
+}
+.refresh-button {
+    width: 60px;
+    height: 40px;
+    background-color: lightseagreen;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-color: black;
+}
+
 #score {
     color: red;
 }
@@ -19,6 +41,7 @@ p {
 }
 .title-cont {
     text-align: center;
+    padding-left: 20px;
 }
 .title {
     width: 300px;
@@ -95,10 +118,10 @@ p {
 
 .text-column {
     margin-top: 13px;
-    width: 340px;
+    width: 380px;
     height: 600px;
+    padding:10px;
     background-color: darkslategray;
-    padding: 20px;
 }
 
 /* Clear floats after the columns */
